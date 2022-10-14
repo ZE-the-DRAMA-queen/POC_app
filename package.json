@@ -1,0 +1,21 @@
+{
+  "name": "teamapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "jose graca",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch": "^3.186.0",
+    "@aws-sdk/client-cloudwatch-logs": "^3.186.0",
+    "@aws-sdk/client-dynamodb": "^3.186.0",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}

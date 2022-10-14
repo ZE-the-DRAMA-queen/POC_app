@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>DevTeam</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mb-4">Edit Dev</h1>
+        <form action="/devs/edit/<%= dev.id.S %>" method="POST">
+            <div class="form-group">
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input required type="text" value="<%= dev.name.S %>" name="name" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input required type="text" name="email" value="<%= dev.email.S %>" id="email" class="form-control">
+            </div>
+            <div class="text-muted mb-2">
+                <%= dev.job.S %>
+            </div>
+            <input name="id" type="hidden" value="<%= dev.id.S %>">
+            <a href="/" class="btn btn-secondary">Cancel</a>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+</body>
+
+</html>
